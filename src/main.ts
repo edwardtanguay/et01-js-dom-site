@@ -11,14 +11,16 @@ document.querySelector('#app')!.innerHTML = `
 		<h2>Tech Books</h2>
 		<div class="books">
 			${books
-			.map((book: any) => {
-				return `
+				.map((book: any) => {
+					return `
 				<div class="book">
+				<img src="https://edwardtanguay.vercel.app/share/images/techBooks/${book.idCode}.jpg"/>
 					<div class="title">${book.title}</div>
+					<div class="description">${book.description}</div>
 				</div>
 				`;
-			})
-			.join('')}
+				})
+				.join('')}
 		</div>
 	</div>
 `;
