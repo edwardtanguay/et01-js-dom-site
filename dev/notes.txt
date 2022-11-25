@@ -2,6 +2,9 @@
 - x publish at Vercel
 - x create and import a module
 - .. how to use a TypeScript interface to make code more secure
+
+- build tools
+	- capitalizeFirstLetter()
 - create getBooks (must be async function, i.e. return a promise)	
 	- waiting icon
 		- mock wait of 3 seconds

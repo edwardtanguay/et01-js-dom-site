@@ -1,18 +1,22 @@
 import { showBooks } from './components/books';
 import './style.scss';
+import { IBook } from './interfaces';
 
 (async () => {
 	const response = await fetch(
 		'https://edwardtanguay.vercel.app/share/techBooks.json'
 	);
 	const rawBooks = await response.json();
-	const books = rawBooks.map((rawBook:any) => {
-		return {
-			idCode: 'buildingMicroservices',
-			title: 'ttt',
-			description: 'ddd'
-		}
-	})
+	const books: IBook[] = [];
+	rawBooks.forEach((rawBook: any) => {
+		const book: IBook = {
+			idCode: rawBook.idCode,
+			title: rawBook.title,
+			description: rawBook.description,
+			language: rawBook.language ? rawBook.language : 'English'
+		};
+		books.push(book);
+	});
 
 	document.querySelector('#app')!.innerHTML = `
 	<div>
