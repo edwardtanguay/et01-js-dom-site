@@ -1,6 +1,7 @@
 import { showBooks } from './components/books';
 import './style.scss';
 import { IBook } from './interfaces';
+import * as tools from './tools';
 
 (async () => {
 	const response = await fetch(
@@ -13,7 +14,7 @@ import { IBook } from './interfaces';
 			idCode: rawBook.idCode,
 			title: rawBook.title,
 			description: rawBook.description,
-			language: rawBook.language ? rawBook.language : 'English'
+			language: rawBook.language ? tools.capitalizeFirstLetter(rawBook.language) : 'English'
 		};
 		books.push(book);
 	});
