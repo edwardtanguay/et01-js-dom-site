@@ -1,3 +1,4 @@
 - x read API data from URL: https://edwardtanguay.vercel.app/share/techBooks.json
-- .. publish at Vercel
-- create and import a module
+- x publish at Vercel
+- .. create and import a module
+- how to use a TypeScript interface to make code more secure
