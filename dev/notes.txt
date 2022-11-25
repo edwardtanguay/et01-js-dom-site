@@ -1,0 +1,2 @@
+- read API data from URL: https://edwardtanguay.vercel.app/share/techBooks.json
+- create and import a module
