@@ -1,7 +1,6 @@
-import { getBook } from './components/book';
+import { showBooks } from './components/books';
 import './style.scss';
 
-// get books
 (async () => {
 	const response = await fetch(
 		'https://edwardtanguay.vercel.app/share/techBooks.json'
@@ -11,13 +10,7 @@ import './style.scss';
 	document.querySelector('#app')!.innerHTML = `
 	<div>
 		<h2>Tech Books</h2>
-		<div class="books">
-			${books
-				.map((book: any) => {
-					return getBook(book);
-				})
-				.join('')}
-		</div>
+		${showBooks(books)}
 	</div>
 `;
 })();

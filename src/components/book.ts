@@ -1,4 +1,4 @@
-export const getBook =(book:any) => {
+export const showBook =(book:any) => {
 	return `
 	<div class="book">
 		<img src="https://edwardtanguay.vercel.app/share/images/techBooks/${book.idCode}.jpg"/>
