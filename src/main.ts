@@ -4,7 +4,7 @@ import { setupCounter } from './counter'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h2>Info Site</h2>
-    Test
+    Test222
     dkfjskdjf
   </div>
 `
