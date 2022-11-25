@@ -5,7 +5,14 @@ import './style.scss';
 	const response = await fetch(
 		'https://edwardtanguay.vercel.app/share/techBooks.json'
 	);
-	const books = await response.json();
+	const rawBooks = await response.json();
+	const books = rawBooks.map((rawBook:any) => {
+		return {
+			idCode: 'buildingMicroservices',
+			title: 'ttt',
+			description: 'ddd'
+		}
+	})
 
 	document.querySelector('#app')!.innerHTML = `
 	<div>
