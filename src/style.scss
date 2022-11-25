@@ -1,4 +1,4 @@
-$titleColor: rgb(78, 78, 181);
+$titleColor: rgb(202, 163, 62);
 
 body {
   background-color: #333;
@@ -16,13 +16,23 @@ body {
       background-color: #222;
       margin-bottom: 1rem;
       padding: 1rem;
+      display: flex;
+      gap: 1rem;
 
-      .title {
-        color: rgb(192, 158, 95);
+      img {
+        width: 8rem;
       }
-      .description {
-        font-size: 1.1rem;
-        font-style: italic;
+
+      .info {
+
+        .title {
+          color: rgb(192, 158, 95);
+        }
+
+        .description {
+          font-size: 1.1rem;
+          font-style: italic;
+        }
       }
     }
   }
