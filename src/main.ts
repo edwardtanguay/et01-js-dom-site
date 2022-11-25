@@ -5,6 +5,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h2>Info Site</h2>
     Test
+    dkfjskdjf
   </div>
 `
 
