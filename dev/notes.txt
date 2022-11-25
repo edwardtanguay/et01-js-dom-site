@@ -1,2 +1,3 @@
-- read API data from URL: https://edwardtanguay.vercel.app/share/techBooks.json
+- x read API data from URL: https://edwardtanguay.vercel.app/share/techBooks.json
+- .. publish at Vercel
 - create and import a module
